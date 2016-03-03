@@ -13,12 +13,12 @@ The wrapper library written in 100% pure C#. So you don't need to build or write
 |---|------|
 |aio||
 |common|:heavy_check_mark:|
-|gpio|InProgress|
+|gpio|InProgress(90%)|
 |i2c||
 |iio||
-|pwm|:heavy_check_mark:|
+|pwm|:heavy_check_mark:(Not tested)|
 |spi||
-|uart|:heavy_check_mark:|
+|uart|:heavy_check_mark:(Not tested)|
 
 
 

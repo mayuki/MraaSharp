@@ -60,3 +60,25 @@ namespace ConsoleApplication21
 
 }
 ```
+
+... and you can manipulate MRAA interactively with C# Shell (Mono's csharp command).
+
+```
+root@harusame:~/tmp# mono /usr/lib/mono/4.5/csharp.exe
+Mono C# Shell, type "help;" for help
+
+Enter statements below.
+csharp> LoadAssembly("MraaSharp");
+csharp> using MraaSharp;
+csharp> Mraa.Initialize();
+csharp> Mraa.Version;
+"v0.8.0"
+csharp> Mraa.PlatformName;
+"Intel Edison"
+csharp> var gpio = new Gpio(MraaIntelEdisonMiniboard.J17_8, MraaGpioDir.Out);
+csharp> gpio.Pin
+7
+csharp> gpio.Write(MraaGpioValue.High);
+csharp> gpio.Write(MraaGpioValue.Low);
+csharp>
+```

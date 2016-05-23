@@ -32,7 +32,7 @@ namespace MraaSharp
     {
         /// <summary>No interrupt on Gpio</summary>
         None = 0,
-        /// <summary>Interupt on rising & falling</summary>
+        /// <summary>Interupt on rising &amp; falling</summary>
         Both = 1,
         /// <summary>Interupt on rising only</summary>
         Rising = 2,
@@ -62,7 +62,7 @@ namespace MraaSharp
     {
         /// <summary>Default. Strong High and Low</summary>
         Strong = 0,
-        /// <summary>Interupt on rising & falling</summary>
+        /// <summary>Interupt on rising &amp; falling</summary>
         PullUp = 1,
         /// <summary>Interupt on rising only</summary>
         PullDown = 2,

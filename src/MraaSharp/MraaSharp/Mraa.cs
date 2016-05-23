@@ -27,7 +27,7 @@ namespace MraaSharp
 
         /// <summary>
         /// De-Initilise MRAA
-        /// This is not a strict requirement but useful to test memory leaks and for people who like super clean code.If dynamically loading & unloading libmraa you need to call this before unloading the library. 
+        /// This is not a strict requirement but useful to test memory leaks and for people who like super clean code.If dynamically loading &amp; unloading libmraa you need to call this before unloading the library. 
         /// </summary>
         public static void Deinitialize()
         {

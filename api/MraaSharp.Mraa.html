@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Mraa
+   | MraaSharp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Mraa
+   | MraaSharp ">
+    <meta name="generator" content="docfx 1.9.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="MraaSharp_Mraa" data-uid="MraaSharp.Mraa">Class Mraa
+              </h1>
+              <div class="markdown level0 summary"><p>API to common functions of MRAA.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Mraa</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:MraaSharp</h6>
+              <h6><strong>Assembly</strong>:MraaSharp.dll</h6>
+              <h5 id="MraaSharp_Mraa_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class Mraa</code></pre>
+              </div>
+              <h3 id="properties">Properties
+              </h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L52">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_AdcRawBits" data-uid="MraaSharp.Mraa.AdcRawBits">AdcRawBits</h4>
+              <div class="markdown level1 summary"><p>Check the board&#39;s bit size when reading the value.
+raw bits being read from kernel module. zero if no ADC</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint AdcRawBits
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L71">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_AdcSupportedBits" data-uid="MraaSharp.Mraa.AdcSupportedBits">AdcSupportedBits</h4>
+              <div class="markdown level1 summary"><p>Return value that the raw value should be shifted to. Zero if no ADC.
+return actual bit size the adc value should be understood as.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint AdcSupportedBits
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L222">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_HasSubPlatform" data-uid="MraaSharp.Mraa.HasSubPlatform">HasSubPlatform</h4>
+              <div class="markdown level1 summary"><p>Detect presence of sub platform.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool HasSubPlatform
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L174">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_I2cBusCount" data-uid="MraaSharp.Mraa.I2cBusCount">I2cBusCount</h4>
+              <div class="markdown level1 summary"><p>Get platform usable I2C bus count, board must be initialised.
+number if usable I2C bus count on the current platform. Function will return -1 on failure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int I2cBusCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L89">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_LogLevel" data-uid="MraaSharp.Mraa.LogLevel">LogLevel</h4>
+              <div class="markdown level1 summary"><p>Sets the log level to use from 0-7 where 7 is very verbose. These are the syslog log levels, see syslog(3) for more information on the levels.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int LogLevel
+{
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L165">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_PinCount" data-uid="MraaSharp.Mraa.PinCount">PinCount</h4>
+              <div class="markdown level1 summary"><p>Get platform pincount, board must be initialised.
+uint of physical pin count on the in-use platform.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint PinCount
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L156">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_PlatformCombinedType" data-uid="MraaSharp.Mraa.PlatformCombinedType">PlatformCombinedType</h4>
+              <div class="markdown level1 summary"><p>Get combined platform type, board must be initialised. The combined type is represented as (sub_platform_type &lt;&lt; 8) | main_platform_type</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int PlatformCombinedType
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L100">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_PlatformName" data-uid="MraaSharp.Mraa.PlatformName">PlatformName</h4>
+              <div class="markdown level1 summary"><p>Return the Platform&#39;s Name, If no platform detected return NULL</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string PlatformName
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L148">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_PlatformType" data-uid="MraaSharp.Mraa.PlatformType">PlatformType</h4>
+              <div class="markdown level1 summary"><p>Get platform type, board must be initialised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static MraaPlatform PlatformType
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatform.html#MraaSharp_MraaPlatform">MraaPlatform</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L119">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_Priority" data-uid="MraaSharp.Mraa.Priority">Priority</h4>
+              <div class="markdown level1 summary"><p>This function attempts to set the mraa process to a given priority and the scheduler to SCHED_RR.
+Highest * priority is typically 99 and minimum is 0. This function * will set to MAX if * priority is &gt; MAX. Function will return -1 on failure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int Priority
+{
+    set;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L131">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_Version" data-uid="MraaSharp.Mraa.Version">Version</h4>
+              <div class="markdown level1 summary"><p>Get the version string of mraa autogenerated from git tag
+The version returned may not be what is expected however it is a reliable number associated with the git tag closest to that version at build time</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string Version
+{
+    get;
+}</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L32">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_Deinitialize" data-uid="MraaSharp.Mraa.Deinitialize">Deinitialize()</h4>
+              <div class="markdown level1 summary"><p>De-Initilise MRAA
+This is not a strict requirement but useful to test memory leaks and for people who like super clean code.If dynamically loading &amp; unloading libmraa you need to call this before unloading the library. </p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Deinitialize()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L214">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetDefaultI2cBus_MraaSharp_MraaPlatformOffset_" data-uid="MraaSharp.Mraa.GetDefaultI2cBus(MraaSharp.MraaPlatformOffset)">GetDefaultI2cBus(MraaPlatformOffset)</h4>
+              <div class="markdown level1 summary"><p>Get default i2c bus, board must be initialised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int GetDefaultI2cBus(MraaPlatformOffset platformOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatformOffset.html#MraaSharp_MraaPlatformOffset">MraaPlatformOffset</a></td>
+                    <td><em>platformOffset</em></td>
+                    <td><p>platform offset; 0 for main platform, 1 foor sub platform</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>default i2c bus index</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L184">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetI2cBusId_System_UInt32_" data-uid="MraaSharp.Mraa.GetI2cBusId(System.UInt32)">GetI2cBusId(UInt32)</h4>
+              <div class="markdown level1 summary"><p>Get I2C adapter number in sysfs.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int GetI2cBusId(uint i2cBus)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td><em>i2cBus</em></td>
+                    <td><p>the logical I2C bus number </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>I2C adapter number in sysfs. Function will return -1 on failure.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L204">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetPinName_System_Int32_" data-uid="MraaSharp.Mraa.GetPinName(System.Int32)">GetPinName(Int32)</h4>
+              <div class="markdown level1 summary"><p>Get name of pin, board must be initialised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string GetPinName(int pin)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>pin</em></td>
+                    <td><p>number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>char* of pin name</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L62">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetPlatformAdcRawBits_MraaSharp_MraaPlatformOffset_" data-uid="MraaSharp.Mraa.GetPlatformAdcRawBits(MraaSharp.MraaPlatformOffset)">GetPlatformAdcRawBits(MraaPlatformOffset)</h4>
+              <div class="markdown level1 summary"><p>Check the specified board&#39;s bit size when reading the value</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint GetPlatformAdcRawBits(MraaPlatformOffset platformOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatformOffset.html#MraaSharp_MraaPlatformOffset">MraaPlatformOffset</a></td>
+                    <td><em>platformOffset</em></td>
+                    <td><p>specified platform offset; 0 for main platform, 1 foor sub platform  </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td><p>raw bits being read from kernel module. zero if no ADC </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L81">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetPlatformAdcSupportedBits_MraaSharp_MraaPlatformOffset_" data-uid="MraaSharp.Mraa.GetPlatformAdcSupportedBits(MraaSharp.MraaPlatformOffset)">GetPlatformAdcSupportedBits(MraaPlatformOffset)</h4>
+              <div class="markdown level1 summary"><p>Return value that the raw value should be shifted to. Zero if no ADC</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint GetPlatformAdcSupportedBits(MraaPlatformOffset platformOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatformOffset.html#MraaSharp_MraaPlatformOffset">MraaPlatformOffset</a></td>
+                    <td><em>platformOffset</em></td>
+                    <td><p>specified platform offset; 0 for main platform, 1 foor sub platform  </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td><p>return actual bit size the adc value should be understood as.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L194">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetPlatformPinCount_MraaSharp_MraaPlatformOffset_" data-uid="MraaSharp.Mraa.GetPlatformPinCount(MraaSharp.MraaPlatformOffset)">GetPlatformPinCount(MraaPlatformOffset)</h4>
+              <div class="markdown level1 summary"><p>Get specified platform pincount, board must be initialised.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static uint GetPlatformPinCount(MraaPlatformOffset platformOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatformOffset.html#MraaSharp_MraaPlatformOffset">MraaPlatformOffset</a></td>
+                    <td><em>platformOffset</em></td>
+                    <td><p>platform offset; 0 for main platform, 1 foor sub platform</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td><p>uint of physical pin count on the in-use platform </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L110">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetPlatformVersion_MraaSharp_MraaPlatformOffset_" data-uid="MraaSharp.Mraa.GetPlatformVersion(MraaSharp.MraaPlatformOffset)">GetPlatformVersion(MraaPlatformOffset)</h4>
+              <div class="markdown level1 summary"><p>Return the platform&#39;s versioning info, the information given depends per platform and can be NULL. platform_offset has to be given. Do not modify this pointer</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static string GetPlatformVersion(MraaPlatformOffset platformOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPlatformOffset.html#MraaSharp_MraaPlatformOffset">MraaPlatformOffset</a></td>
+                    <td><em>platformOffset</em></td>
+                    <td><p>specified platform offset; 0 for main platform, 1 for sub platform</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><p>platform&#39;s versioning string</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L242">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetSubPlatformId_System_Int32_" data-uid="MraaSharp.Mraa.GetSubPlatformId(System.Int32)">GetSubPlatformId(Int32)</h4>
+              <div class="markdown level1 summary"><p>Convert pin or bus index to corresponding sub platform id.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int GetSubPlatformId(int pinOrBusIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>pinOrBusIndex</em></td>
+                    <td><p>pin or bus index</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>sub platform pin or bus number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L252">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_GetSubPlatformIndex_System_Int32_" data-uid="MraaSharp.Mraa.GetSubPlatformIndex(System.Int32)">GetSubPlatformIndex(Int32)</h4>
+              <div class="markdown level1 summary"><p>Convert pin or bus sub platform id to index.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int GetSubPlatformIndex(int pinOrBusId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>pinOrBusId</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>pin or bus index</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L19">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_Initialize" data-uid="MraaSharp.Mraa.Initialize">Initialize()</h4>
+              <div class="markdown level1 summary"><p>Initialise MRAA
+Detects running platform and attempts to use included pinmap, this is run on module/library init/load but is handy to rerun to check board initialised correctly.MRAA_SUCCESS inidicates correct (first time) initialisation whilst MRAA_ERROR_PLATFORM_ALREADY_INITIALISED indicates the board is already initialised correctly</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Initialize()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L232">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_IsSubPlatformId_System_Int32_" data-uid="MraaSharp.Mraa.IsSubPlatformId(System.Int32)">IsSubPlatformId(Int32)</h4>
+              <div class="markdown level1 summary"><p>Check if pin or bus id includes sub platform mask.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool IsSubPlatformId(int pinOrBusId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>pinOrBusId</em></td>
+                    <td><p>pin or bus number</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>mraa_boolean_t 1 if pin or bus is for sub platform, 0 otherwise </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L43">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_PinModeTest_System_Int32_MraaSharp_MraaPinModes_" data-uid="MraaSharp.Mraa.PinModeTest(System.Int32,MraaSharp.MraaPinModes)">PinModeTest(Int32, MraaPinModes)</h4>
+              <div class="markdown level1 summary"><p>Checks if a pin is able to use the passed in mode.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool PinModeTest(int pin, MraaPinModes mode)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>pin</em></td>
+                    <td><p>Physical Pin to be checked. </p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaPinModes.html#MraaSharp_MraaPinModes">MraaPinModes</a></td>
+                    <td><em>mode</em></td>
+                    <td><p>the mode to be tested. </p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>boolean if the mode is supported, 0=false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/mayuki/MraaSharp/blob/master/src/MraaSharp/MraaSharp/Mraa.cs/#L140">View Source</a>
+              </span>
+              <h4 id="MraaSharp_Mraa_ResultPrint_MraaSharp_MraaResult_" data-uid="MraaSharp.Mraa.ResultPrint(MraaSharp.MraaResult)">ResultPrint(MraaResult)</h4>
+              <div class="markdown level1 summary"><p>Print a textual representation of the mraa_result_t</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void ResultPrint(MraaResult result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MraaSharp.MraaResult.html#MraaSharp_MraaResult">MraaResult</a></td>
+                    <td><em>result</em></td>
+                    <td><p>the result to print</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

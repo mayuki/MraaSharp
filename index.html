@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MraaSharp | MraaSharp </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="MraaSharp | MraaSharp ">
+    <meta name="generator" content="docfx 1.9.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="mraasharp">MraaSharp</h1>
+              
+<p>.NET(C#) binding/wrapper for Intel MRAA library.</p>
+<p>The wrapper library written in 100% pure C#. So you don&#39;t need to build or write SWIG wrapper.</p>
+<h2 id="testing-environment">Testing Environment</h2>
+<ul>
+<li>Intel Edison + Breakout Board Kit<ul>
+<li>Intel Edison® Board Firmware Software Release 2.1</li>
+</ul>
+</li>
+<li>Mono 4.0.3</li>
+</ul>
+<h2 id="status">Status</h2>
+<table>
+<thead>
+<tr>
+<th>API</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aio</td>
+<td></td>
+</tr>
+<tr>
+<td>common</td>
+<td>:heavy_check_mark:</td>
+</tr>
+<tr>
+<td>gpio</td>
+<td>InProgress(90%)</td>
+</tr>
+<tr>
+<td>i2c</td>
+<td></td>
+</tr>
+<tr>
+<td>iio</td>
+<td></td>
+</tr>
+<tr>
+<td>pwm</td>
+<td>:heavy_check_mark:(Not tested)</td>
+</tr>
+<tr>
+<td>spi</td>
+<td></td>
+</tr>
+<tr>
+<td>uart</td>
+<td>:heavy_check_mark:(Not tested)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-code">Sample Code</h2>
+<pre><code class="lang-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+using MraaSharp;
+
+namespace ConsoleApplication21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Mraa.Initialize();
+            Console.WriteLine(&quot;Version: {0}&quot;, Mraa.Version);
+            Console.WriteLine(&quot;PlatformName: {0}&quot;, Mraa.PlatformName);
+
+            var gpio = new Gpio(MraaIntelEdisonMiniboard.J17_8, MraaGpioDir.Out);
+            Console.WriteLine(&quot;Gpio Pin: {0}&quot;, gpio.Pin);
+            Console.WriteLine(&quot;Gpio PinRaw: {0}&quot;, gpio.PinRaw);
+
+            while (true)
+            {
+                gpio.Write(MraaGpioValue.High);
+                Thread.Sleep(1000);
+                gpio.Write(MraaGpioValue.Low);
+                Thread.Sleep(1000);
+            }
+        }
+    }
+
+}
+</code></pre>
+<p>... and you can manipulate MRAA interactively with C# Shell (Mono&#39;s csharp command).</p>
+<pre><code>root@harusame:~/tmp# mono /usr/lib/mono/4.5/csharp.exe
+Mono C# Shell, type &quot;help;&quot; for help
+
+Enter statements below.
+csharp&gt; LoadAssembly(&quot;MraaSharp&quot;);
+csharp&gt; using MraaSharp;
+csharp&gt; Mraa.Initialize();
+csharp&gt; Mraa.Version;
+&quot;v0.8.0&quot;
+csharp&gt; Mraa.PlatformName;
+&quot;Intel Edison&quot;
+csharp&gt; var gpio = new Gpio(MraaIntelEdisonMiniboard.J17_8, MraaGpioDir.Out);
+csharp&gt; gpio.Pin
+7
+csharp&gt; gpio.Write(MraaGpioValue.High);
+csharp&gt; gpio.Write(MraaGpioValue.Low);
+csharp&gt;
+</code></pre>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
